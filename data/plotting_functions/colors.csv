@@ -1,0 +1,31 @@
+class,color,zorder,desc,label
+MBA,#00ada7,0,main belt asteroid,Main belt asteroid
+TJN,#f38b8a,3,trojan asteroid,Trojan asteroid
+OMB,#ffd393,1,outer main belt asteroid,Outer main belt asteroid
+GRK,#cb2855,2,greek asteroid,Greek asteroid
+CEN,#c4bd6c,4,centaur asteroid,Centaur asteroid
+MCA,#d73423,4,mars-crossing asteroid,Mars-crossing asteroid
+AST,#706353,4,"asteroid, unspecified",Unclassified asteroid
+TNO,#1f8a70,4,trans-neptunian object,Trans-Neptunian object
+AMO,#979330,4,amor asteroid,Near-Earth asteroid
+IMB,#e19222,0,inner main belt asteroid,Inner main belt asteroid
+APO,#979330,0,apollo asteroid,Near-Earth asteroid
+ATE,#979330,0,aten asteroid,Near-Earth asteroid
+IEO,#979330,0,interior earth object,Near-Earth asteroid
+HYA,#aec7b2,0,hyperbolic asteroid,Hyperbolic asteroid
+PAR,#e6dfcf,0,comet,Comet
+JFc,#e6dfcf,0,comet,Comet
+COM,#e6dfcf,0,comet,Comet
+HYP,#e6dfcf,0,comet,Comet
+HTC,#e6dfcf,0,comet,Comet
+Etc,#e6dfcf,0,comet,Comet
+JFC,#e6dfcf,0,comet,Comet
+CTc,#e6dfcf,0,comet,Comet
+Mercury,#b6a965,10,planet,
+Venus,#d05227,10,planet,
+Earth,#7EBCE5,10,planet,
+Mars,#cb2655,10,planet,
+Jupiter,#e1d9c4,10,planet,
+Saturn,#A73E5C,10,planet,
+Uranus,#F34E52,10,planet,
+Neptune,#738cc1,10,planet,

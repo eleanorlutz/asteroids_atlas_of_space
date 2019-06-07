@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:tno-centaur_diam-albedo-density:data:tno_centaur_diam_alb_dens_tab</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>TNO_CENTAUR_DIAMETERS_ALBEDOS_DENSITIES</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Johnston, W. R.</author_list>
+      <publication_year>2018</publication_year>
+      <description>The table tno_centaur_diam_alb_dens lists measured values of diameter, albedo, and
+density for TNOs and Centaurs, along with summary heliocentric orbit data and
+dynamical type.  Information on each component in binary/multiple systems is included
+if available.</description>
+    </Citation_Information>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>1986-01-01Z</start_date_time>
+      <stop_date_time>2018-03-31Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+        <discipline_name>Small Bodies</discipline_name>
+        <facet1>Dynamical Properties</facet1>
+      </Science_Facets>
+      <Science_Facets>
+        <discipline_name>Small Bodies</discipline_name>
+        <facet1>Lightcurve</facet1>
+      </Science_Facets>
+      <Science_Facets>
+        <discipline_name>Small Bodies</discipline_name>
+        <facet1>Physical Properties</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>None</name>
+      <type>Other Investigation</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Literature search</name>
+        <type>Literature Search</type>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Multiple Asteroids</name>
+      <type>Asteroid</type>
+    </Target_Identification>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>tno_centaur_diam_alb_dens.tab</file_name>
+      <local_identifier>file</local_identifier>
+      <file_size unit="byte">154524</file_size>
+      <records>652</records>
+    </File>
+    <Table_Character>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>652</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>35</fields>
+        <groups>0</groups>
+        <record_length unit="byte">237</record_length>
+        <Field_Character>
+          <name>ASTEROID_NUMBER</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7d</field_format>
+          <description>Official minor planet number.</description>
+          <Special_Constants>
+            <missing_constant>0</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ASTEROID_NAME</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">10</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">15</field_length>
+          <field_format>%-15s</field_format>
+          <description>Official name.</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PROVISIONAL_DESIGNATION</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">26</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">10</field_length>
+          <field_format>%-10s</field_format>
+          <description>Provisional designation.</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SEMIMAJOR_AXIS</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">37</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>ASTRONOMICAL_UNIT</unit>
+          <description>Semimajor axis of heliocentric orbit.</description>
+          <Special_Constants>
+            <missing_constant>-9.99</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ECCENTRICITY</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">45</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5.2f</field_format>
+          <description>Eccentricity of heliocentric orbit.</description>
+          <Special_Constants>
+            <missing_constant>-9.99</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>INCLINATION</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">51</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4.0f</field_format>
+          <unit>DEGREE</unit>
+          <description>Inclination of heliocentric orbit with respect to the ecliptic.</description>
+          <Special_Constants>
+            <missing_constant>-9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DYNAMICAL_TYPE</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">57</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%-4s</field_format>
+          <description>Code for the dynamical type of the primary:  m:n = Neptune m:n resonance object
+(where m and n are integers), CEN = Centaur, CUB = Cubewano, HAU = Haumea family
+member, NL4 = Neptune trojan, L4 position, PLU = Plutino, SAT = satellite, SDO =
+scattered disk object, TNO = other trans-Neptunian object).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>NUMBER_OF_COMPANIONS</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">62</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>Number of known companions.</description>
+          <Special_Constants>
+            <missing_constant>-9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ABSOLUTE_MAGNITUDE_MPC</name>
+          <field_number>9</field_number>
+          <field_location unit="byte">65</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5.1f</field_format>
+          <description>Absolute magnitude reported by the Minor Planet Center (as of 31 March 2018).</description>
+          <Special_Constants>
+            <missing_constant>-99.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ABSOLUTE_MAGNITUDE</name>
+          <field_number>10</field_number>
+          <field_location unit="byte">72</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.3f</field_format>
+          <description>Absolute magnitude used to determine albedo.</description>
+          <Special_Constants>
+            <missing_constant>-99.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ABSOLUTE_MAGNITUDE_UNCERTAINTY</name>
+          <field_number>11</field_number>
+          <field_location unit="byte">81</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.3f</field_format>
+          <description>Uncertainty of absolute magnitude used to determine albedo.</description>
+          <Special_Constants>
+            <missing_constant>-99.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EFFECTIVE_DIAMETER</name>
+          <field_number>12</field_number>
+          <field_location unit="byte">90</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Effective diameter.  This is object diameter for single objects and combined
+effective diameter for binary/multiple objects.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EFFECTIVE_DIAMETER_ERROR_UPPER</name>
+          <field_number>13</field_number>
+          <field_location unit="byte">97</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Upper error bar on effective diameter.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EFFECTIVE_DIAMETER_ERROR_LOWER</name>
+          <field_number>14</field_number>
+          <field_location unit="byte">105</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Lower error bar on effective diameter.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>EFFECTIVE_DIAMETER_CODE</name>
+          <field_number>15</field_number>
+          <field_location unit="byte">112</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Note code for value of effective diameter (A = assumed; D = derived; G = greater
+than; L = less than).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PRIMARY_DIAMETER</name>
+          <field_number>16</field_number>
+          <field_location unit="byte">116</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Diameter of primary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PRIMARY_DIAMETER_ERROR_UPPER</name>
+          <field_number>17</field_number>
+          <field_location unit="byte">124</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Upper error bar on diameter of primary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PRIMARY_DIAMETER_ERROR_LOWER</name>
+          <field_number>18</field_number>
+          <field_location unit="byte">131</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Lower error bar on diameter of primary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PRIMARY_DIAMETER_CODE</name>
+          <field_number>19</field_number>
+          <field_location unit="byte">138</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Note code for value of primary diameter (A = assumed; D = derived; G = greater than;
+L = less than).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SECONDARY_DIAMETER</name>
+          <field_number>20</field_number>
+          <field_location unit="byte">142</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Diameter of secondary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SECONDARY_DIAMETER_ERROR_UPPER</name>
+          <field_number>21</field_number>
+          <field_location unit="byte">149</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Upper error bar on diameter of secondary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SECONDARY_DIAMETER_ERROR_LOWER</name>
+          <field_number>22</field_number>
+          <field_location unit="byte">156</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.1f</field_format>
+          <unit>KILOMETER</unit>
+          <description>Lower error bar on diameter of secondary.</description>
+          <Special_Constants>
+            <missing_constant>-999.9</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SECONDARY_DIAMETER_CODE</name>
+          <field_number>23</field_number>
+          <field_location unit="byte">163</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Note code for value of secondary diameter (D = derived; G = greater than; L = less
+than; 3, 4, ... = third, fourth, ... component of system).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ALBEDO</name>
+          <field_number>24</field_number>
+          <field_location unit="byte">166</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <description>Albedo.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ALBEDO_ERROR_UPPER</name>
+          <field_number>25</field_number>
+          <field_location unit="byte">174</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <description>Upper error bar on albedo.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ALBEDO_ERROR_LOWER</name>
+          <field_number>26</field_number>
+          <field_location unit="byte">182</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <description>Lower error bar on albedo.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ALBEDO_COLOR</name>
+          <field_number>27</field_number>
+          <field_location unit="byte">189</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Color or type of albedo (B red; V = visible; * = geometric (no color specified)).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>ALBEDO_CODE</name>
+          <field_number>28</field_number>
+          <field_location unit="byte">192</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Note code for value of albedo (A assumed; D = derived; G = greater than; L = less
+than; 1, 2, ... = value specific to first, second, ... component).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DENSITY</name>
+          <field_number>29</field_number>
+          <field_location unit="byte">196</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <unit>GRAM_PER_CUBIC_CENTIMETER</unit>
+          <description>Mass density.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DENSITY_ERROR_UPPER</name>
+          <field_number>30</field_number>
+          <field_location unit="byte">204</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <unit>GRAM_PER_CUBIC_CENTIMETER</unit>
+          <description>Upper error bar on mass density.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DENSITY_ERROR_LOWER</name>
+          <field_number>31</field_number>
+          <field_location unit="byte">212</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6.3f</field_format>
+          <unit>GRAM_PER_CUBIC_CENTIMETER</unit>
+          <description>Lower error bar on mass density.</description>
+          <Special_Constants>
+            <missing_constant>-9.999</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DENSITY_CODE</name>
+          <field_number>32</field_number>
+          <field_location unit="byte">220</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Note code for value of mass density (A assumed; D = derived; G = greater than; L =
+less than; 1, 2, ... = value specific to first, second, ... component).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>METHOD_DIAMETER_ALBEDO</name>
+          <field_number>33</field_number>
+          <field_location unit="byte">224</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">3</field_length>
+          <field_format>%-3s</field_format>
+          <description>Method used to determine diameter and albedo (A = assumed or adopted value; E =
+mutual events; I = direct imaging; M = multiple or modified methods; O = stellar
+occultation; T = thermal; Y = dynamical; * = reanalysis of previously published
+results; # = cited source reported only system mass, values given here are derived).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>METHOD_DENSITY</name>
+          <field_number>34</field_number>
+          <field_location unit="byte">228</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%-2s</field_format>
+          <description>Method used to determine density (H hydrostatic equilibrium model; M = multiple or
+modified methods; Y = dynamical; * = reanalysis of previously published results).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>REFERENCE_CODE</name>
+          <field_number>35</field_number>
+          <field_location unit="byte">232</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%-4s</field_format>
+          <description>Reference code for source of data (see the file references.asc in the document
+directory).</description>
+          <Special_Constants>
+            <missing_constant>-</missing_constant>
+          </Special_Constants>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>
+

@@ -1,0 +1,187 @@
+Description of the TNO AND CENTAUR DIAMETERS, ALBEDOS, AND DENSITIES bundle V1.0
+================================================================================
+
+Bundle Generation Date: 2018-08-27
+Peer Review: 2018a Asteroid Review
+Discipline node: Small Bodies Node
+
+
+Content description for the TNO AND CENTAUR DIAMETERS, ALBEDOS, AND DENSITIES bundle
+====================================================================================
+
+OVERVIEW                                                                  
+                                                                            
+  This data set is a compilation of published diameters, albedos, and       
+  densities for Transneptunian Objects (TNOs) and Centaurs.  A total of 194 
+  objects are listed, many with more than one entry.  This version covers   
+  published values through 31 March 2018.                                   
+                                                                            
+  DATA                                                                      
+                                                                            
+  Data were collected from the published literature for TNOs and Centaurs,  
+  with many objects having data reported by more than one group.  Reported  
+  values for Pluto and Charon are limited to those published after 1985.    
+  Entries are listed by object permanent number, then by provisional        
+  designation, then by year of publication, then alphabetically by          
+  author(s).  Users are referred to the respective papers regarding details 
+  of observations and methodology.                                          
+                                                                            
+                                                                            
+  TABLES                                                                    
+                                                                            
+  The table 'tno_centaur_diam_alb_dens' lists data for objects with the     
+  following columns:                                                        
+                                                                            
+     * object number, name, and provisional designation;                    
+     * object heliocentric semimajor axis (AU), eccentricity, and           
+    inclination;                                                            
+     * object dynamical type;                                               
+     * number of known companions;                                          
+     * MPC-reported absolute magnitude (as of 31 March 2016);               
+     * absolute magnitude value used in albedo calculation with error bar;  
+     * effective diameter (km) with upper/lower error bars and note code;   
+     * primary diameter (km) with upper/lower error bars and note code;     
+     * companion diameter (km) with upper/lower error bars and note code;   
+     * albedo with upper/lower error bars, note code, and color code;       
+     * system mass density (g/cm^3) with upper/lower error bars and note    
+    code;                                                                   
+     * methods used for diameter/albedo determination and density           
+    determination;                                                          
+     * and reference code.                                                  
+                                                                            
+  Dynamical type codes are as follows:                                      
+     1:2 = Neptune 1:2 resonance object,                                    
+     2:5 = Neptune 2:5 resonance object,                                    
+     2:7 = Neptune 2:7 resonance object,                                    
+     3:5 = Neptune 3:5 resonance object,                                    
+     3:8 = Neptune 3:8 resonance object,                                    
+     3:10 = Neptune 3:10 resonance object,                                  
+     4:7 = Neptune 4:7 resonance object,                                    
+     CEN = Centaur,                                                         
+     CUB = Cubewano,                                                        
+     HAU = Haumea family,                                                   
+     NL4 = Neptune trojan, L4 position,                                     
+     PLU = Plutino (= Neptune 2:3 resonance object),                        
+     SAT = satellite,                                                       
+     SDO = scattered disk object, and                                       
+     TNO = other Transneptunian Object.                                     
+  Dynamical types are based on the Minor Planet Center 'Unusual Minor       
+  Planet' listings and on classifications by the Deep Ecliptic Survey Team  
+  [http://www.boulder.swri.edu/~buie/kbo/desclass.html] (see Elliot et al., 
+  2005).  Haumea family members are those listed by Snodgrass et al., 2010. 
+                                                                            
+  For single objects, effective diameter is the measured diameter and the   
+  component diameter columns have null values.  For objects with more than  
+  one component, effective diameter is the combined effective diameter      
+  (where D_eff^2 = D_1^2 + D_2^2 for binaries, etc.) and individual         
+  component diameters are provided in the respective columns.  In general,  
+  albedo and density values are the system averages; if they are specific to
+  a component, they include a note code specifying which component (1, 2, 3,
+  ...) in a separate entry for that component.  Separate entries are also   
+  provided for additional components after the first two, again with note   
+  codes specifying which component (3, 4, ...).                             
+                                                                            
+  Note codes indicate comments on data values as follows (more than one code
+  may apply):                                                               
+     1, 2, 3, ... = component diameter for first, second, third, etc.,      
+    system component;                                                       
+     A = assumed, applies to adopted values used from other publications or 
+    to assumed densities used for dynamical determinations of               
+    diameter/albedo;                                                        
+     D = derived by the compiler from values reported by the respective     
+    source;                                                                 
+     G = greater than;                                                      
+     L = less than;                                                         
+                                                                            
+  Albedo color codes indicate color reported by the source:  B = blue, R =  
+     red, V = visual, and * = geometric (no color specified).               
+                                                                            
+  Method codes for diameter/albedo determinations are as follows (more than 
+  one code may apply):                                                      
+     E = mutual events;                                                     
+     I = direct imaging;                                                    
+     M = multiple or modified methods (see respective source for details);  
+     O = stellar occultation;                                               
+     T = thermal/radiometric observations/modeling;                         
+     Y = dynamical (based on system mass from orbit determination, observed 
+    magnitude, and assumed density;                                         
+     # = cited source reported only system mass, values given here are      
+    derived;                                                                
+     * = reanalysis of previously published results.                        
+                                                                            
+  Method codes for density determinations are as follows (more than one code
+  may apply):                                                               
+     H = hydrodynamic model (based on observed/derived oblateness).         
+     M = multiple or modified methods (see respective source for details);  
+     Y = dynamical (based on system mass from orbit determination and       
+    independently measured diameter);                                       
+     * = reanalysis of previously published results.                        
+                                                                            
+  Reference codes refer to full reference information listed in the         
+  'references' table.  This table has columns for reference code and full   
+  reference.                                                                
+                                                                            
+  Regarding uncertainties on measured values, readers are referred to the   
+  respective references.  Dashes or invalid inputs (usually -9.99) indicate 
+  unassigned or unknown values.                                             
+                                                                            
+                                                                            
+  MODIFICATION HISTORY                                                      
+                                                                            
+  Differences between the current database version and the previous version 
+  (2016) are:                                                               
+                                                                            
+     * A total of 194 objects/systems are represented, or 4 more than the   
+    previous release.                                                       
+     * A total of 652 entries are included, or 70 more than the previous    
+    release.                                                                
+     * Heliocentric orbit semimajor axis, eccentricity, and inclination are 
+    updated from the MPC Orbit (MPCORB) Database, and outer solar system    
+    dynamical types are supplemented by classifications from the Deep       
+    Ecliptic Survey Team.                                                   
+                                                                            
+  Modifications in successive versions are summarized as follows:           
+     * V1.0 in PDS3 (31 March 2013) contained 341 entries representing 125 objects/ 
+    systems and included object number, name, and provisional designation;  
+    heliocentric semimajor axis, eccentricity, inclination, and dynamical   
+    type; number of known companions; absolute magnitude from MPC and as    
+    used in albedo calculations; effective diameter and (for binary/        
+    multiple objects) primary and secondary diameters; albedo, system mass  
+    density, codes for methods used, and reference codes.                   
+     * V2.0 (31 March 2014) contained 519 entries representing 178 objects/ 
+    systems.                                                                
+     * V3.0 (31 March 2015) contained 549 entries representing 181 objects/ 
+    systems.                                                                
+     * V4.0 (31 March 2016) contained 582 entries representing 190 objects/ 
+    systems.                                                                
+     * V1.0 in PDS4 (31 March 2018) contains 652 entries representing 194 objects/  
+    systems.                                                                
+                                                                            
+                                                                            
+  JOURNALS USED                                                             
+                                                                            
+  Cited sources include articles from the following journals:  Astronomy and
+  Astrophysics; Astronomical Journal; Astrophysical Journal; Astrophysical  
+  Journal Letters; Bulletin of the American Astronomical Society; Earth,    
+  Moon and Planets; Icarus; Monthly Notices of the Royal Astronomical       
+  Society; Nature; Publications of the Astronomical Society of the Pacific; 
+  and Science.  Other sources are from conference proceedings, IAUCs, and   
+  book contributions.                                                       
+                                                                            
+                                                                            
+  REFERENCES                                                                
+                                                                            
+  Elliot, J. L., et al., 2005, The Deep Ecliptic Survey:  A search for      
+  Kuiper belt objects and Centaurs. II. Dynamical classification, the Kuiper
+  belt plane, and the core population, Astron. J., 129:1117-1162.           
+                                                                            
+  Snodgrass, C., B. Carry, C. Dumas, and O. Hainaut, 2010, Characterisation 
+  of candidate members of (136108) Haumea's family, Astron. & Astrophys.,   
+  511:A72.
+
+
+Caveats to the data user
+========================
+
+The Astrophysics Data System (ADS) was used to collect the data presented in these tables. Users are referred to the individual papers in the ancillary document for the confidence level of each item.
+

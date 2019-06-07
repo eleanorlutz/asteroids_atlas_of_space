@@ -1,0 +1,15 @@
+Document Collection Contents
+
+The document collection contains documentation files, where available, for 
+this bundle. All document files will have an accompanying label file to 
+describe content and structure.  Label files have the same name as the main 
+document file, with an extension of ".xml".
+
+bundle_description.txt - Bundle description for the tno-centaur_diam-albedo-density bundle - A document describing the content and structure of the bundle.
+
+ref.txt - Reference List - The reference list for the bundle.
+
+AA_Document_Index.txt - Document Index - The file you are reading.
+
+collection_tno-centaur_diam-albedo-density_document_inventory.csv - Collection Inventory - An inventory of document products in this collection.
+

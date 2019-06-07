@@ -1,0 +1,7 @@
+Reference List for the TNO AND CENTAUR DIAMETERS, ALBEDOS, AND DENSITIES bundle
+===============================================================================
+
+Elliot, J.L., S.D. Kern, K.B. Clancy, A.A.S. Gulbis, R.L. Millis, and 6 others, The Deep Ecliptic Survey: A search for Kuiper Belt Objects and Centaurs. II. Dynamical classification, the Kuiper belt plane, and the core population, Astron. J. 129, 1117-1162, doi:10.1086/427395, 2005.
+
+Snodgrass, C., B. Carry, C. Dumas, and O. Hainaut, Characterisation of candidate members of (136108) Haumea's family, Astron. Astrophys. 511, A72, doi:10.1051/0004-6361/200913031, 2010.
+
