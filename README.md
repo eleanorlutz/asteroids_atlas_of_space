@@ -7,7 +7,7 @@
 
 This repository explains how to make a map of the solar system using open-source code and data from NASA. Software used includes `Python 3.7.1`, `NASA HORIZONS`, `Illustrator CC 2019` and `Photoshop CC 2019`. If you have comments or suggestions for this tutorial, please let me know [on my blog](http://tabletopwhale.com/2019/06/10/the-solar-system.html)! You can buy the [finished map here](https://www.redbubble.com/people/eleanorlutz/works/39373641-an-asteroid-map-of-the-solar-system).
 
-**Python dependencies:** `matplotlib` `astropy` `numpy` `pandas` `os` `time` `urllib`
+**Python dependencies:** `matplotlib` `astropy` `numpy` `pandas` `os` `time` `urllib`. Dependencies can be installed with `pip install -r requirements.txt`.
 
 ![Snapshot of final product](./readme_figures/asteroids.jpg)
 
